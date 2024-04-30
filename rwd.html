@@ -9,11 +9,36 @@
         .img-fluid{
             max-width: 100%;
         }
+        #mainBanner{
+            background-image: url("./img/bg.png");
+            height:100vw;
+            max-height:800px;
+            background-repeat:repeat;
+            background-position:center;
+            background-size: auto 100%;
+            transition: 0.5s;
+            color:white; 
+            font-size: 80px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        #mainBanner:hover{
+            background-size: auto 150%;
+        }
+        @media(max-width:991px){
+            h2 span{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="mainBanner">
-        <img src="./img/bg.png" class="img-fluid" alt="">
+   <div id="mainBanner">
+        <!-- <img src="./img/bg.png" class="img-fluid" alt="">  -->
+        <!-- 이미지는 검색어에 걸림
+        백그라운드 이미지는 검색어에 걸리지 않음 -->
+        <h2>삼양홀딩스<span>에 오신것을 환영합니다.</span></h2>
     </div>
 </body>
 </html>
