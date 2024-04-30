@@ -81,23 +81,23 @@
         // // 아이디가 close에게 배경색을 빨강으로 처리
         // document.getElementById("close").style.backgroundColor="red";
        
-        let status = true;
-            document.getElementById("animationAllbtn").addEventListener('click', function(){
-               if(status){
-                document.getElementById("animationAllbtn").classList.add("show");
-                status =false;
-               }else{
-                document.getElementById("animationAllbtn").classList.remove("show");
-                status = true;
-               }
-            })
+        // let status = true;
+        //     document.getElementById("animationAllbtn").addEventListener('click', function(){
+        //        if(status){
+        //         document.getElementById("animationAllbtn").classList.add("show");
+        //         status =false;
+        //        }else{
+        //         document.getElementById("animationAllbtn").classList.remove("show");
+        //         status = true;
+        //        }
+        //     })
             //토글기능의 원리
 
-//             const btn = document.getElementById("animationAllbtn");
-// btn.addEventListener("click", () => {
-//   btn.classList.toggle("show");
-// });
-// // 최적화
+        const btn = document.getElementById("animationAllbtn");
+        btn.addEventListener("click", () => {
+        btn.classList.toggle("show");
+        });
+            // chat gpt의 최적화코드 
             
     </script>
     </body>
